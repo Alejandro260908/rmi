@@ -20,6 +20,14 @@ public class ServidorImpl extends UnicastRemoteObject implements Servidor {
         return lista;
     }
 
+    private static String getPersona(int id) {
+
+        return "Nombre: " + listPersonas().get(id-1).getNombre() + "\n"
+                + "Correo: " + listPersonas().get(id-1).getCorreo() + "\n"
+                + "Cargo: " + listPersonas().get(id-1).getCargo() + "\n"
+                + "Sueldo: " + listPersonas().get(id-1).getSueldo() + "\n";
+    }
+
     public ServidorImpl() throws RemoteException {
     }
 
