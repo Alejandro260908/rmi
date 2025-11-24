@@ -15,4 +15,24 @@ public class Persona {
         this.cargo = cargo;
         this.sueldo = sueldo;
     }
+
+    public int getClave() {
+        return clave;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public String getCorreo() {
+        return correo;
+    }
+
+    public String getCargo() {
+        return cargo;
+    }
+
+    public String getSueldo() {
+        return sueldo;
+    }
 }
