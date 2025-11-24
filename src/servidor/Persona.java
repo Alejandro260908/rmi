@@ -6,9 +6,9 @@ public class Persona {
     private String nombre;
     private String correo;
     private String cargo;
-    private String sueldo;
+    private double sueldo;
 
-    public Persona(int clave, String nombre, String correo, String cargo, String sueldo) {
+    public Persona(int clave, String nombre, String correo, String cargo, double sueldo) {
         this.clave = clave;
         this.nombre = nombre;
         this.correo = correo;
@@ -32,7 +32,7 @@ public class Persona {
         return cargo;
     }
 
-    public String getSueldo() {
+    public double getSueldo() {
         return sueldo;
     }
 }
