@@ -33,15 +33,19 @@ public class ServidorImpl extends UnicastRemoteObject implements Servidor {
     }
 
 
-    public static void main(String[] args) throws Exception {
+    /*public static void main(String[] args) throws Exception {
 
         ServidorImpl servidor  = new ServidorImpl();
-        System.out.println(servidor.consultar(0));
+        System.out.println(servidor.consultar(4));
 
-    }
+    }*/
 
     @Override
     public String consultar(int id) throws Exception {
-        return getPersona(id);
+        if (id<listPersonas().size()+1) {
+            return getPersona(id);
+        }else {
+            return "No existen datos del empleado";
+        }
     }
 }
