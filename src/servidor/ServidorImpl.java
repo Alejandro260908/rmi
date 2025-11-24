@@ -29,16 +29,19 @@ public class ServidorImpl extends UnicastRemoteObject implements Servidor {
     }
 
     public ServidorImpl() throws RemoteException {
+
     }
 
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
 
+        ServidorImpl servidor  = new ServidorImpl();
+        System.out.println(servidor.consultar(0));
 
     }
 
     @Override
     public String consultar(int id) throws Exception {
-        return null;
+        return getPersona(id);
     }
 }
