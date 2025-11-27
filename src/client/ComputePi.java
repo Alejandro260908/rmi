@@ -8,7 +8,7 @@ import compute.Compute;
 public class ComputePi {
     public static void main(String args[]) {
 
-        String host = (args.length < 1) ? "localhost" : args[0];
+        String host = (args.length < 1) ? "192.168.137.1" : args[0];
         int d = (args.length < 2) ? 500 : Integer.parseInt(args[1]);
 
         try {

@@ -19,7 +19,7 @@ public class ComputeEngine implements Compute {
     }
 
     public static void main(String[] args) {
-        System.setProperty("java.rmi.server.hostname", "192.168.1.50");
+        //System.setProperty("java.rmi.server.hostname", "192.168.1.50");
 
         try {
             Registry registry = LocateRegistry.createRegistry(8080);
