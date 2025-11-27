@@ -1,9 +1,9 @@
-package servidor;
+package compute;
 
 import java.rmi.Remote;
 import java.rmi.RemoteException;
 
-public class metodos {
+public class Compute {
 
     public interface Compute extends Remote {
 
@@ -11,7 +11,5 @@ public class metodos {
 
     }
 
-    public interface Task<T> {
-        T execute();
-    }
+
 }
