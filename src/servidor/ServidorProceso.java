@@ -6,7 +6,7 @@ public class ServidorProceso {
 
     public static void main(String [] args) throws Exception{
         ServidorImpl servidor = new ServidorImpl();
-        String rmiObjectName = "rmi://localhost/Datos";
+        String rmiObjectName = "rmi//localhost";
         Naming.rebind(rmiObjectName, servidor);
         System.out.println("Servidor remoto corriendo");
     }
