@@ -1,4 +1,4 @@
-package Client;
+package client;
 
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
@@ -11,9 +11,6 @@ public class ComputePi {
         String host = (args.length < 1) ? "localhost" : args[0];
         int d = (args.length < 2) ? 500 : Integer.parseInt(args[1]);
 
-        if (System.getSecurityManager() == null) {
-            System.setSecurityManager(new SecurityManager());
-        }
         try {
             String name = "Compute";
             Registry registry = LocateRegistry.getRegistry(host, 8080);
